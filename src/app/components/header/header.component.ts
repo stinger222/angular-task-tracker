@@ -13,4 +13,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  handleClose() {
+    console.log('Somtehing closed, kekw');
+  }
 }
