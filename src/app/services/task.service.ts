@@ -4,7 +4,7 @@ import { TASKS, ITask } from 'src/app/models/tasks';
 @Injectable({
   providedIn: 'root'
 })
-export class TasksService {
+export class TaskService {
 
   constructor() { }
 

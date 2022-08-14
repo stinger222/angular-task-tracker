@@ -1,4 +1,4 @@
-import { TasksService } from './../../services/tasks.service';
+import { TaskService } from './../../services/task.service';
 import { Component, OnInit } from '@angular/core';
 import { ITask } from 'src/app/models/tasks';
 
@@ -10,10 +10,10 @@ import { ITask } from 'src/app/models/tasks';
 export class TasksListComponent implements OnInit {
   tasks: ITask[] = []
 
-  constructor(private tasksService: TasksService) { }
+  constructor(private taskService: TaskService) { }
 
   ngOnInit(): void {
-    this.tasks = this.tasksService.getTasks()
+    this.tasks = this.taskService.getTasks()
   }
 
 }
