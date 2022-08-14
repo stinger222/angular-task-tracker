@@ -8,4 +8,13 @@
     display: flex;
     justify-content: space-between;
   }
+
+  fa-icon {
+    cursor: pointer;
+    user-select: none;
+
+    &:active {
+      transform: scale(.95);
+    }
+  }
 }
