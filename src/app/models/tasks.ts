@@ -1,5 +1,5 @@
 export interface ITask {
-  id?: number,
+  id: number,
   text: string,
   day: Date | string,
   reminder: boolean
@@ -35,5 +35,5 @@ export const TASKS: Array<ITask> = [
     text: "Task №5",
     day: "May 5th at 2:30am",
     reminder: true
-  },
+  }
 ]
