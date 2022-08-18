@@ -10,6 +10,7 @@ import { ITask } from 'src/app/models/tasks';
 export class TasksListComponent implements OnInit {
   tasks: ITask[] = []
 
+
   constructor(private taskService: TaskService) { }
 
   ngOnInit(): void {

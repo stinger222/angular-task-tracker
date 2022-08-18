@@ -9,10 +9,10 @@ import { Observable, of } from 'rxjs';
 export class TaskService {
   private baseApiUrl = 'http://localhost:3001/tasks'
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   public getTasks(): Observable<ITask[]> {
-    const tasks = of(TASKS)
-    return tasks
+
+    return this.http.get<ITask[]>(this.baseApiUrl)
   }
 }
