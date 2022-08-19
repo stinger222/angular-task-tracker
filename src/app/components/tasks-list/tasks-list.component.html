@@ -3,6 +3,7 @@
     *ngFor="let task of tasks"
     [task]="task"
     (onDeleteTask)="deleteTask(task)"
+    (onReminderToggle)="toggleReminder(task)"
   ></app-task-item>
 
   <div *ngIf="tasks.length === 0" [ngStyle]="{'text-align': 'center'}">

@@ -10,7 +10,7 @@ import { faTimes, IconDefinition } from '@fortawesome/free-solid-svg-icons'
 export class TaskItemComponent implements OnInit {
   @Input() task: ITask
   @Output() onDeleteTask = new EventEmitter<ITask>();
-
+  @Output() onReminderToggle = new EventEmitter<ITask>();
   faTimes: IconDefinition = faTimes
 
   constructor() { }
@@ -20,5 +20,9 @@ export class TaskItemComponent implements OnInit {
 
   onDelete(task: ITask) {
     this.onDeleteTask.emit(task)
+  }
+
+  onToggle(task: ITask) {
+    this.onReminderToggle.emit(task)
   }
 }

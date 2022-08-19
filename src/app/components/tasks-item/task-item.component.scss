@@ -2,6 +2,7 @@
   background: #f0f0f0;
   padding: 0.5em 1em;
   margin-bottom: 0.3em;
+  border-left: 3px solid transparent;
 
   h3 {
     margin-bottom: 0.2em;
@@ -17,4 +18,14 @@
       transform: scale(.95);
     }
   }
+
+  p {
+    cursor: pointer;
+    user-select: none;
+  }
+}
+
+.reminder {
+  border-left: 3px solid green;
+  box-sizing: border-box;
 }
