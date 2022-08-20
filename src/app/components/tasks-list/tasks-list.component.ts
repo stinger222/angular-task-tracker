@@ -24,7 +24,7 @@ export class TasksListComponent implements OnInit {
 
     this.taskService.deleteTask(task).subscribe(
       () => {
-        console.log('Successfully deleted!')
+        console.log('Task successfully deleted!')
         const toFilterIndexd = this.tasks.findIndex((i) => i.id === task.id)
         this.tasks.splice(toFilterIndexd, 1)
       },
@@ -37,11 +37,23 @@ export class TasksListComponent implements OnInit {
 
     this.taskService.toggleReminder(task).subscribe(
       () => {
-        console.log('Successfully toggled!')
+        console.log('Reminder successfully toggled!')
         const targetTask: ITask | undefined = this.tasks.find(i => i.id === task.id)
         if (targetTask) targetTask.reminder = !task.reminder
       },
       (error) => console.error('Can\' toggle reminder! \n', error)
+    )
+  }
+
+  addTask(newTask: ITask) {
+    console.log("Trying to create new task... ", newTask)
+
+    this.taskService.addTask(newTask).subscribe(
+      () => {
+        console.log("Task successfully created!")
+        this.tasks.push(newTask)
+      },
+      (error) => console.error('Task creation failed! \n', error)
     )
   }
 }

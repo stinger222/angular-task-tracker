@@ -27,4 +27,9 @@ export class TaskService {
       reminder: !task.reminder
     })
   }
+
+  public addTask(newTask: ITask): Observable<ITask> {
+    const url = `${this.baseApiUrl}/`
+    return this.http.post<ITask>(url, newTask)
+  }
 }

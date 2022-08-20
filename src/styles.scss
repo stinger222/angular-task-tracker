@@ -17,11 +17,61 @@ body {
     padding: 0.3em 0.7em;
     border-radius: 0.3em;
     font-size: inherit;
-    transition: filter .2s;
+    transition: filter .2s linear;
     cursor: pointer;
 
     &:active {
       transform: scale(0.98);
+    }
+  }
+
+  .btn-block {
+    background: rgb(33, 33, 33);
+    margin-top: 0.4em;
+    width: 100%;
+    transition: filter .2s linear;
+
+    &:hover {
+      filter: brightness(1.5)
+    }
+  }
+
+  input {
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 0.3em;
+  }
+
+  form {
+    .form-control {
+      margin-bottom: 0.5em;
+
+      label {
+        display: block;
+        font-size: 0.8em;
+        margin-bottom: 0.3em;
+        margin-left: -0.3em;
+        user-select: none;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.3em 0.3em;
+        font-size: 0.8em;
+      }
+    }
+
+    .form-control-checkbox {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      label {
+        margin: 0 0.5em 0 0;
+      }
+      input {
+        width: fit-content;
+      }
     }
   }
 }
