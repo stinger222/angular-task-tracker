@@ -13,47 +13,57 @@ export class TaskListComponent implements OnInit {
   constructor(private taskService: TaskService) { }
 
   ngOnInit(): void {
-    this.taskService.getTasks().subscribe(
-      (tasks) => this.tasks = tasks,
-      (error) => console.error(error)
-    )
+    this.taskService.getTasks().subscribe({
+      next: (tasks) => {
+        this.tasks = tasks
+      },
+      error: (error) => console.error(error)
+    })
   }
+
 
   deleteTask(task: ITask) {
     console.log("Deleting this item... ", task);
 
-    this.taskService.deleteTask(task).subscribe(
-      () => {
+    this.taskService.deleteTask(task).subscribe({
+      complete: () => {
         console.log('Task successfully deleted!')
         const toFilterIndexd = this.tasks.findIndex((i) => i.id === task.id)
         this.tasks.splice(toFilterIndexd, 1)
       },
-      (error) => console.error('Deletion failed! \n', error)
+      error: (error) => console.error('Deletion failed! \n', error)
+    }
+
+
     )
   }
 
   toggleReminder(task: ITask) {
     console.log('Trying to toggle reminder...');
 
-    this.taskService.toggleReminder(task).subscribe(
-      () => {
+    this.taskService.toggleReminder(task).subscribe({
+      complete: () => {
         console.log('Reminder successfully toggled!')
         const targetTask: ITask | undefined = this.tasks.find(i => i.id === task.id)
         if (targetTask) targetTask.reminder = !task.reminder
       },
-      (error) => console.error('Can\' toggle reminder! \n', error)
-    )
+      error: (error) => console.error('Can\' toggle reminder! \n', error)
+    })
   }
 
   addTask(newTask: ITask) {
+    const biggestId = this.tasks.slice(-1)[0]?.id || 0
+    newTask.id = newTask.id ? newTask.id : biggestId + 1
+
     console.log("Trying to create new task... ", newTask)
 
-    this.taskService.addTask(newTask).subscribe(
-      () => {
+    this.taskService.addTask(newTask).subscribe({
+      complete: () => {
         console.log("Task successfully created!")
         this.tasks.push(newTask)
       },
-      (error) => console.error('Task creation failed! \n', error)
+      error: (error) => console.error('Task creation failed! \n', error)
+    }
     )
   }
 }
