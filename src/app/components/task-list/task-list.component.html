@@ -1,0 +1,13 @@
+<div class="task-list">
+  <app-task-creator (onAddTask)="addTask($event)"></app-task-creator>
+  <app-task-item
+    *ngFor="let task of tasks"
+    [task]="task"
+    (onDeleteTask)="deleteTask(task)"
+    (onReminderToggle)="toggleReminder(task)"
+  ></app-task-item>
+
+  <div *ngIf="tasks.length === 0" [ngStyle]="{'text-align': 'center'}">
+    <p>No tasks found!</p>
+  </div>
+</div>

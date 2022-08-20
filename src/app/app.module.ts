@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ButtonComponent } from './components/button/button.component';
-import { TasksListComponent } from './components/tasks-list/tasks-list.component';
-import { TaskItemComponent } from './components/tasks-item/task-item.component';
+import { TaskListComponent } from './components/task-list/task-list.component';
+import { TaskItemComponent } from './components/task-item/task-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { TaskCreatorComponent } from './components/task-creator/task-creator.component';
@@ -16,7 +16,7 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     HeaderComponent,
     ButtonComponent,
-    TasksListComponent,
+    TaskListComponent,
     TaskItemComponent,
     TaskCreatorComponent
   ],
