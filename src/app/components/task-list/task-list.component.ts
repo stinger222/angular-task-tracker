@@ -32,10 +32,7 @@ export class TaskListComponent implements OnInit {
         this.tasks.splice(toFilterIndexd, 1)
       },
       error: (error) => console.error('Deletion failed! \n', error)
-    }
-
-
-    )
+    })
   }
 
   toggleReminder(task: ITask) {
@@ -63,7 +60,6 @@ export class TaskListComponent implements OnInit {
         this.tasks.push(newTask)
       },
       error: (error) => console.error('Task creation failed! \n', error)
-    }
-    )
+    })
   }
 }
