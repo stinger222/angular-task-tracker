@@ -1,27 +1,46 @@
-# TaskTracker
+# What is it?
+Just ordinary, simple app to learn basics of Angular framework.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
+# What basics exactly? What knowledge I got from building this project?
+- Angular CLI:
+  - setup flags
+  - templates
+  - generating components, services
+- Angular apps file structure
+- Some template syntax, such as
+  - property binding
+  - two-way binding
+  - event binding
+  - attribute directives (ngClass, ngStyle, ngFor)
+  - @Inputs & @Outputs
+- Global/Local Styling
+- Third party modules (fontawesome icons)
+- Services
+  - generating
+  - using inside components
+  - services goals
+- RxJs
+  - Streams / Work with async data
+    - Observables, subscription methods, live cycle, best practices
+    - Subjects, their variations (Behavior, Async), goals, differences etc
+  - Pipes... concept? idk
+    - data normalization using Observable.pipe(fn1, ...) method + rxjs's map, filter etc 
+- Mock backend using JSON-Server
+- Http Module
+  - CRUD operations
+  - observables
+- Forms Module
+  - two-way binding
+  - submitting
+- Router Module
+  - actual routing
+  - conditional rendering depending on url
+  - router links
 
-## Development server
+- And JUST TON of theoretical info from endless(or not so) articles and videos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# If you (for some reason) wanna start this shit locally:
+1. just copy this repository
+2. run "npm i" to install app dependencies
+3. run "ng serve -o" to run project on http://localhost:4200
+4. run "npm run server" to start mock backend (db.json file)
