@@ -1,6 +1,7 @@
 <header>
   <h1> {{ title }} </h1>
   <app-button
+    *ngIf="matchesRoute('/')"
     text="{{taskCreatorVisible ? 'Close' : 'Add'}}"
     bgColor="{{taskCreatorVisible ? '#dc0000d1' : '#018700f5'}}"
     (btnClcik)="toggleTaskCreator()"

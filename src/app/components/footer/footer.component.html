@@ -1,4 +1,7 @@
 <footer>
   <span>Copyright &copy; 2021</span>
-  <a routerLink="/about">About</a>
+  <a
+    *ngIf="matchesRoute('/')"
+    routerLink="/about"
+  >About</a>
 </footer>
