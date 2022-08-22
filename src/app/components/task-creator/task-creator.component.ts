@@ -1,3 +1,5 @@
+import { Subscription } from 'rxjs';
+import { UiService } from './../../services/ui.service';
 import { ITask } from './../../models/tasks';
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
@@ -10,10 +12,16 @@ export class TaskCreatorComponent implements OnInit {
   text: string
   day: string
   reminder: boolean = false
+  isVisible: boolean = false
+  taskCreatorSubject: Subscription;
 
   @Output() onAddTask = new EventEmitter()
 
-  constructor() { }
+  constructor(private uiService: UiService) {
+    this.taskCreatorSubject = this.uiService.getTaskCreatorSubject().subscribe({
+      next: (visibility) => this.isVisible = visibility
+    })
+  }
 
   ngOnInit() {
   }

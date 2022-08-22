@@ -1,4 +1,8 @@
-<form class="task-creator" (ngSubmit)="onSubmit()">
+<form
+    class="task-creator"
+    (ngSubmit)="onSubmit()"
+    *ngIf="isVisible"
+  >
   <div class="form-control">
     <label for="text">Task</label>
     <input
