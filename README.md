@@ -37,4 +37,10 @@ Just ordinary, simple app to learn basics of Angular framework.
   - conditional rendering depending on url
   - router links
 
-- And JUST TON of theoretical info from endless(or not so) articles and videos 
+- And JUST TON of theoretical info from endless(or not so) articles and videos
+
+# If you (for some reason) wanna start this shit locally:
+1. just copy this repository
+2. run "npm i" to install app dependencies
+3. run "ng serve -o" to run project on http://localhost:4200
+4. run "npm run server" to start mock backend (db.json file)
