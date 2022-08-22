@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs';
 import { TaskService } from '../../services/task.service';
 import { Component, OnInit } from '@angular/core';
 import { ITask } from 'src/app/models/tasks';
@@ -20,7 +21,6 @@ export class TaskListComponent implements OnInit {
       error: (error) => console.error(error)
     })
   }
-
 
   deleteTask(task: ITask) {
     console.log("Deleting this item... ", task);
