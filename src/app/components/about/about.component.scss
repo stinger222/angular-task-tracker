@@ -1,0 +1,22 @@
+.about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 0.3em 1em;
+  padding-inline: 1em;
+  text-align: center;
+
+  .title {
+    font-weight: 400;
+    margin-bottom: 0.5em;
+  }
+
+  .desc {
+    font-weight: 100;
+    margin-bottom: 1em;
+  }
+
+  a {
+    color: black;
+  }
+}
