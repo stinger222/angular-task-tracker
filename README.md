@@ -44,3 +44,14 @@ Just ordinary, simple app to learn basics of Angular framework.
 2. run "npm i" to install app dependencies
 3. run "ng serve -o" to run project on http://localhost:4200
 4. run "npm run server" to start mock backend (db.json file)
+
+#Galery(?)
+
+![image](https://user-images.githubusercontent.com/39219491/186028327-33ba384c-3cc3-4e01-9dc5-2f03a3ab8c49.png)
+
+![image](https://user-images.githubusercontent.com/39219491/186028368-8c1c9c31-d948-4398-b3ff-2b3d604aea90.png)
+
+![image](https://user-images.githubusercontent.com/39219491/186028396-93df144b-d189-4654-a931-7b81dfcd27fe.png)
+
+
+
