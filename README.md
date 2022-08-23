@@ -1,7 +1,7 @@
 # What is it?
 Just ordinary, simple app to learn basics of Angular framework.
 
-# What basics exactly? What knowledge I got from building this project?
+## What basics exactly? What knowledge did I gain from building this project?
 - Angular CLI:
   - setup flags
   - templates
