@@ -24,7 +24,8 @@ Just ordinary, simple app to learn basics of Angular framework.
     - Observables, subscription methods, live cycle, best practices
     - Subjects, their variations (Behavior, Async), goals, differences etc
   - Pipes... concept? idk
-    - data normalization using Observable.pipe(fn1, ...) method + rxjs's map, filter etc 
+    - data normalization using Observable.pipe() method
+    - rxjs's map, filter, find, skip, take 
 - Mock backend using JSON-Server
 - Http Module
   - CRUD operations
@@ -45,7 +46,7 @@ Just ordinary, simple app to learn basics of Angular framework.
 3. run "ng serve -o" to run project on http://localhost:4200
 4. run "npm run server" to start mock backend (db.json file)
 
-# Galery(?)
+# Gallery(?)
 
 ![image](https://user-images.githubusercontent.com/39219491/186028327-33ba384c-3cc3-4e01-9dc5-2f03a3ab8c49.png)
 
