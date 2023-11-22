@@ -2,23 +2,6 @@
 Just ordinary, simple app to learn basics of Angular framework.
 
 ## What basics exactly? What knowledge did I gain from building this project?
-- Angular CLI:
-  - setup flags
-  - templates
-  - generating components, services
-- Angular apps file structure
-- Some template syntax, such as
-  - property binding
-  - two-way binding
-  - event binding
-  - attribute directives (ngClass, ngStyle, ngFor)
-  - @Inputs & @Outputs
-- Global/Local Styling
-- Third party modules (fontawesome icons)
-- Services
-  - generating
-  - using inside components
-  - services goals
 - RxJs
   - Streams / Work with async data
     - Observables, subscription methods, live cycle, best practices
@@ -26,7 +9,16 @@ Just ordinary, simple app to learn basics of Angular framework.
   - Pipes... concept? idk
     - data normalization using Observable.pipe() method
     - rxjs's map, filter, find, skip, take 
-- Mock backend using JSON-Server
+- Some template syntax, such as
+  - property binding
+  - two-way binding
+  - event binding
+  - attribute directives (ngClass, ngStyle, ngFor)
+  - @Inputs & @Outputs
+- Services
+  - generating
+  - using inside components
+  - services goals
 - Http Module
   - CRUD operations
   - observables
@@ -38,15 +30,14 @@ Just ordinary, simple app to learn basics of Angular framework.
   - conditional rendering depending on url
   - router links
 
+- Global/Local Styling
+- Third party modules (fontawesome icons)
+- Angular apps file structure
+- Angular CLI
+
 - And JUST TON of theoretical info from endless(or not so) articles and videos
 
-# If you (for some reason) wanna start this shit locally:
-1. just clone this repository
-2. run "npm i" to install app dependencies
-3. run "ng serve -o" to run project on http://localhost:4200
-4. run "npm run server" to start mock backend (db.json file)
-
-# Gallery(?)
+# Preview
 
 ![image](https://user-images.githubusercontent.com/39219491/186028327-33ba384c-3cc3-4e01-9dc5-2f03a3ab8c49.png)
 
@@ -54,5 +45,8 @@ Just ordinary, simple app to learn basics of Angular framework.
 
 ![image](https://user-images.githubusercontent.com/39219491/186028396-93df144b-d189-4654-a931-7b81dfcd27fe.png)
 
-
-
+# If you (for some reason) wanna start this locally:
+1. Just clone this repository
+2. Run `npm i` to install app dependencies
+3. Run `ng serve -o` to run project on http://localhost:4200
+4. Run `npm run server` to start mock backend (db.json file)
