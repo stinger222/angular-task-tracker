@@ -1,7 +1,7 @@
-# What is it?
+# What is this app?
 Just ordinary, simple app to learn basics of Angular framework.
 
-## What basics exactly? What knowledge did I gain from building this project?
+## What knowledge did I gain by building this project?
 - RxJs
   - Streams / Work with async data
     - Observables, subscription methods, live cycle, best practices
